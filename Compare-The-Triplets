@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Compare {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int award_a = 0;
+        int award_b = 0;
+        int a[] = new int[3];
+        int b[] = new int[3];
+        for (int i = 0; i < a.length; i++) {
+            a[i] = scan.nextInt();
+        }
+        for (int i = 0; i < b.length; i++) {
+            b[i] = scan.nextInt();
+            if (a[i] > b[i]) {
+                award_a++;
+            } else if (a[i] < b[i]) {
+                award_b++;
+            }
+        } 
+        System.out.println(award_a + " " + award_b);
+        }
+        }
